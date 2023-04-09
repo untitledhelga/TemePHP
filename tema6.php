@@ -12,17 +12,19 @@
 //     echo "Variabila 1 si variabila 2 sunt egale";
 // }
 
-// // ----- Ex. 2 -----  
+// // ----- Ex. 2 -----
 // $n1 = 15;
 // $n2 = 20;
 // $n3 = 25;
 
-// if ($n1 >= $n2 && $n1 >= $n3) {
-//     echo "Cel mai mare numar din $n1, $n2, $n3 este $n1";
-// } elseif ($n2 >= $n1 && $n2 >= $n3) {
-//     echo "Cel mai mare numar din $n1, $n2, $n3 este $n2";
+// if ($n1 > $n2 && $n1 > $n3) {
+//     echo "Cel mai mare numar din $n1, $n2, $n3 este n1 = $n1";
+// } elseif ($n2 > $n1 && $n2 > $n3) {
+//     echo "Cel mai mare numar din $n1, $n2, $n3 este n2 = $n2";
+// } elseif ($n3 > $n1 && $n3 > $n2) {
+//     echo "Cel mai mare numar din $n1, $n2, $n3 este n3 = $n3";
 // } else {
-//     echo "Cel mai mare numar din $n1, $n2, $n3 este $n3";
+//     echo "Numerele $n1, $n2, $n3 sunt egale";
 // }
 
 // ----- Ex. 3 ----- 
@@ -70,6 +72,17 @@
 //     $i++;
 // }
 
+// // Functia recursiva
+// $x = 0;
+// function recursive($x) {
+//     if($x < 5) {
+//         echo "Exercitiul 3"."<br>";
+//         $x++;
+//         recursive($x);
+//     }
+// }
+// recursive($x);
+
 // // ----- Ex. 4 ----- 
 // // FOR
 // for($i = 1; $i < 26; $i++) {
@@ -99,6 +112,17 @@
 //     }
 // }
 
+// // Functia recursiva
+// $x = 76;
+// function recursive($x) {
+//     if($x <= 100) {
+//         echo $x."<br>";
+//         $x++;
+//         recursive($x);
+//     }
+// }
+// recursive($x);
+
 // // ----- Ex. 5 ----- 
 // function afisare_numere($N) {
 //     for ($i = 0; $i <= $N; $i++) {
@@ -115,9 +139,9 @@
 // // ----- Ex. 6 ----- 
 // // Prima imagine 5 x *
 // for($i = 0; $i < 5; $i++){
-//     echo "*";
+//     echo "*"; // se poate scapa de echo 
 
-//     for($j = 0; $j < 4; $j++){
+//     for($j = 0; $j < 4; $j++){ // in loc de < 4, sa fie < 5 daca comentam linia 132
 //         echo "*"; 
 //     }
 //     echo "<br>";
